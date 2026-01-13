@@ -1,0 +1,252 @@
+{
+    "nav": {
+        "tagline": "Software Engineering · Autonomous Driving · AI",
+        "about": "About Me",
+        "research": "Research",
+        "skills": "Skills & Interests",
+        "timeline": "Timeline",
+        "projects": "Course Resources & Projects"
+    },
+    "hero": {
+        "badge": "Haven't I had a heroic, beautiful, and illusory past... luckily written on golden leaves?",
+        "title": "Wentao Luo",
+        "subtitle": "Computer Science and Technology @ SUSTech\nFocus: Software Engineering, Autonomous Driving, AI (NLP, Deep Learning, Reinforcement Learning, etc.)",
+        "resume": "Curriculum Vitae",
+        "copyEmail": "Copy Email",
+        "copied": "Email Copied",
+        "name": "Wentao Luo",
+        "stat": {
+            "gpa": "GPA",
+            "rank": "Major Rank",
+            "highlight": "Honors",
+            "highlightValue": "Provincial First Prize in Mathematical Modeling (Guangdong)"
+        },
+        "kv": {
+            "focus": {
+                "title": "Research Focus",
+                "value": "Closed-loop Evaluation and Testability of End-to-End Autonomous Driving"
+            },
+            "strength": {
+                "title": "Strength",
+                "value": "From Research to Engineering (Reproducible Pipeline + Diagnostics)"
+            },
+            "growth": {
+                "title": "Ongoing Growth",
+                "value": "Multilingual Communication and Academic Writing"
+            }
+        },
+        "chips": [
+            "Engineering Probability & Statistics",
+            "Data Structures & Algorithm Analysis",
+            "Digital Logic",
+            "Database Systems",
+            "Computer Organization",
+            "Discrete Mathematics",
+            "Computer Networks",
+            "Artificial Intelligence",
+            "Computer System Design & Applications",
+            "End-to-End Autonomous Driving & Closed-loop Testing"
+        ]
+    },
+    "about": {
+        "title": "About Me",
+        "subtitle": "",
+        "meTitle": "Profile",
+        "hlTitle": "Future Plans",
+        "paras": [
+            "I am an undergraduate student in Computer Science at SUSTech with a solid foundation in <b>programming, data structures, algorithms, and software engineering</b>.",
+            "I have a strong interest in <b>AI (NLP, deep learning, reinforcement learning) and autonomous driving (end-to-end architectures and closed-loop testing)</b>, and enjoy turning research ideas into engineering systems.",
+            "I value <b>teamwork and continuous learning</b>, and aim to strengthen independent problem-solving and collaborative research capabilities."
+        ],
+        "highlights": [
+            "Improve multilingual communication, academic writing, and teamwork skills.",
+            "Deepen knowledge in AI and autonomous driving, and actively participate in frontier research projects.",
+            "Plan to pursue graduate studies domestically or abroad to further develop academic and research capabilities."
+        ]
+    },
+    "research": {
+        "title": "Research",
+        "subtitle": "",
+        "cardTitle": "End-to-End Autonomous Driving and Closed-Loop Testing",
+        "meta": "Advisors: Qi Hao (Academic Advisor), Gongjin Lan | Team Members: Yi Xu, Xun Zhao, Wentao Luo",
+        "tag": "Research",
+        "bullets": [
+            "Study <b>closed-loop evaluation paradigms</b> and testability of end-to-end autonomous driving models",
+            "Build a <b>CARLA</b>-based closed-loop testing pipeline enabling continuous perception–decision–action–feedback",
+            "Implement <b>real-time execution and diagnostic logging</b> to capture behavioral signals beyond open-loop metrics",
+            "Analyze failure modes such as <b>error accumulation</b>, <b>state drift</b>, and <b>control instability</b>",
+            "Complete <b>technical reports</b> and <b>final presentations</b>"
+        ],
+        "downloadsHeading": "Reports and Presentation Files",
+        "keywords": [
+            "E2E Autonomous Driving",
+            "Parking E2E",
+            "SparseDrive",
+            "Closed-loop Testing",
+            "Model Diagnosis and Evaluation"
+        ],
+        "report": "Report (PDF)",
+        "slides": "Slides",
+        "downloadsTitle": "Downloads",
+        "downloadsSubtitle": "Reports and presentations (preview + one-click download)",
+        "download": "Download",
+        "comingSoon": "Coming Soon"
+    },
+    "awards": {
+        "title": "Awards",
+        "items": [
+            {
+                "name": "China Undergraduate Mathematical Contest in Modeling <b>Provincial First Prize (Guangdong)</b>",
+                "year": "2025",
+                "tag": "Modeling"
+            },
+            {
+                "name": "MCM Successful Participant (Team Leader)",
+                "year": "2024",
+                "tag": "Modeling"
+            },
+            {
+                "name": "CET-6",
+                "year": "2025",
+                "tag": "English"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Course Resources & Projects",
+        "subtitle": "Continuously Updated...",
+        "featured": "Under Construction",
+        "repo": "Repository",
+        "repoSoon": "Repository links will be added later (site first).",
+        "filters": {
+            "all": "All",
+            "autonomy": "Autonomous Driving",
+            "ai": "AI",
+            "systems": "Systems"
+        },
+        "items": {
+            "closedLoop": {
+                "title": "Closed-loop Testing Prototype for End-to-End Autonomous Driving",
+                "desc": "An interactive CARLA-based evaluation pipeline focusing on error accumulation, state drift, and stability diagnostics."
+            },
+            "ai": {
+                "title": "AI / Machine Learning Projects (To Be Organized)",
+                "desc": "Organize AI-related course and lab projects into reproducible repositories with complete README, environment setup, and reproduction steps."
+            },
+            "systems": {
+                "title": "Computer Networks / System Design Labs (To Be Organized)",
+                "desc": "Refactor networking and systems labs into engineering-grade projects with test cases and clear documentation."
+            }
+        },
+        "gotoGithub": "Go to GitHub",
+        "planTitle": "Planned Structure",
+        "planItems": [
+            "Autonomous driving / closed-loop evaluation",
+            "AI / machine learning course projects",
+            "Systems / networking experiments and implementations",
+            "Toolchains and reproducibility templates (CI / documentation)"
+        ],
+        "note": "Note: This section is currently a placeholder and will be updated with clickable repository cards."
+    },
+    "skills": {
+        "title": "Skills & Interests",
+        "subtitle": "",
+        "columns": {
+            "courses": {
+                "title": "Courses",
+                "items": [
+                    "Engineering Probability & Statistics",
+                    "Data Structures & Algorithm Analysis",
+                    "Digital Logic",
+                    "Database Systems",
+                    "Advanced Programming",
+                    "Computer Organization",
+                    "Discrete Mathematics",
+                    "Computer System Design & Applications",
+                    "Computer Networks",
+                    "Object-Oriented Analysis & Design",
+                    "Artificial Intelligence"
+                ]
+            },
+            "tech": {
+                "title": "Programming Languages & Tools",
+                "items": [
+                    "Java, C, C++, Python, MATLAB: solid programming and project development skills.",
+                    "Git, GitHub: familiar with repository creation, commits, maintenance, and collaboration workflows.",
+                    "LaTeX, Markdown: capable of academic writing and document typesetting.",
+                    "Windows, Linux, macOS, CARLA: proficient in operating systems and simulation environments."
+                ]
+            },
+            "others": {
+                "title": "Other Skills",
+                "items": [
+                    "Strong teamwork: able to integrate quickly into teams and collaborate efficiently on complex projects.",
+                    "Organization and communication: capable of coordinating meetings and clearly expressing requirements.",
+                    "Multilingual communication: able to work in Chinese, English, and Japanese environments.",
+                    "Support-oriented mindset: able to provide emotional and logistical support under high-pressure situations."
+                ]
+            },
+            "hobbies": {
+                "title": "Hobbies",
+                "items": [
+                    "Reading: exploring knowledge through books and appreciating ideas and history.",
+                    "Fitness: maintaining physical strength and mental resilience.",
+                    "Traveling: discovering diverse landscapes and cultures, broadening perspectives.",
+                    "Video games: exploring creativity and system design in virtual worlds."
+                ]
+            }
+        }
+    },
+    "timeline": {
+        "title": "Timeline",
+        "subtitle": "",
+        "items": [
+            {
+                "time": "2025",
+                "title": "Provincial First Prize in Mathematical Modeling (Guangdong)",
+                "desc": "",
+                "type": "award"
+            },
+            {
+                "time": "2025",
+                "title": "Outstanding Student & Outstanding Youth League Member",
+                "desc": "",
+                "type": "award"
+            },
+            {
+                "time": "2025",
+                "title": "CET-6",
+                "desc": "",
+                "type": "language"
+            },
+            {
+                "time": "2025",
+                "title": "MCM Successful Participant",
+                "desc": "",
+                "type": "award",
+                "preview": "/files/mcm.jpg"
+            },
+            {
+                "time": "2024",
+                "title": "CET-4",
+                "desc": "",
+                "type": "language"
+            },
+            {
+                "time": "2024",
+                "title": "SUSTech Freshman Cup Table Tennis Top 8",
+                "desc": "",
+                "type": "sports"
+            },
+            {
+                "time": "2023",
+                "title": "SUSTech Freshman Scholarship",
+                "desc": "",
+                "type": "award"
+            }
+        ]
+    },
+    "footer": {
+        "built": "Hosted on GitHub Pages · All rights reserved"
+    }
+}

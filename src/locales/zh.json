@@ -1,0 +1,252 @@
+{
+    "nav": {
+        "tagline": "软件工程 · 自动驾驶 · 人工智能",
+        "about": "关于我",
+        "research": "科研成果",
+        "skills": "能力与爱好",
+        "timeline": "成长履历",
+        "projects": "课程资源与项目实现"
+    },
+    "hero": {
+        "badge": "我难道就没有一段英勇、美好而又虚幻的过去......幸运地写在金叶片上？",
+        "title": "罗文韬 (Wentao Luo)",
+        "subtitle": "南方科技大学计算机科学与技术\n研究方向：软件工程，自动驾驶，人工智能（NLP、深度学习、强化学习等）",
+        "resume": "个人简历",
+        "copyEmail": "复制邮箱",
+        "copied": "已复制邮箱",
+        "name": "罗文韬(Wentao Luo)",
+        "stat": {
+            "gpa": "总绩点",
+            "rank": "专业排名",
+            "highlight": "所获荣誉",
+            "highlightValue": "数学建模广东省一等奖"
+        },
+        "kv": {
+            "focus": {
+                "title": "研究聚焦",
+                "value": "端到端自动驾驶闭环评测与可测试性"
+            },
+            "strength": {
+                "title": "优势",
+                "value": "研究到工程落地（可复现 pipeline + 诊断）"
+            },
+            "growth": {
+                "title": "持续提升",
+                "value": "多语沟通与学术写作能力"
+            }
+        },
+        "chips": [
+            "工程概率统计",
+            "数据结构与算法分析",
+            "数字逻辑",
+            "数据库原理",
+            "计算机组成原理",
+            "离散数学",
+            "计算机网络",
+            "人工智能",
+            "计算机系统设计及应用",
+            "端到端自动驾驶与闭环测试"
+        ]
+    },
+    "about": {
+        "title": "关于我",
+        "subtitle": "",
+        "meTitle": "个人简介",
+        "hlTitle": "未来规划",
+        "paras": [
+            "我是南方科技大学的一名计算机本科生，具备扎实的 <b>编程、数据结构、算法与软件工程</b> 基础。",
+            "我对 <b>人工智能（NLP，深度学习，强化学习等）与自动驾驶（端到端架构与模型闭环测试）</b> 有着浓厚兴趣，享受将科研灵感实现为工程化项目，解决各种难题。",
+            "我重视 <b>团队合作与持续学习能力</b>，致力于提升独立破题能力与协作科研能力，在领域内做出一番贡献。"
+        ],
+        "highlights": [
+            "提高多语言交流能力、学术写作能力与团队协作能力。",
+            "进一步学习人工智能与自动驾驶领域知识，提高科研投入，积极参与相关方向前沿研究项目。",
+            "暂计划本校保研或国内外深造，在学术道路上继续探索，完善自身知识储备与科研能力。"
+        ]
+    },
+    "research": {
+        "title": "科研成果",
+        "subtitle": "",
+        "cardTitle": "端到端自动驾驶与闭环测试\nE2E Autonomous Driving and Closed-Loop Testing",
+        "meta": "指导老师：郝祁（学术导师），兰功金\u00A0\u00A0\u00A0\u00A0|\u00A0\u00A0\u00A0\u00A0团队成员：胥熠，赵勋，罗文韬",
+        "tag": "Research",
+        "bullets": [
+            "研究端到端自动驾驶模型的 <b>闭环评测范式</b> 与“可测试性”",
+            "搭建 <b>CARLA</b> 闭环测试 pipeline，实现“感知–决策–执行–反馈”连续交互",
+            "实现 <b>实时执行与诊断日志</b>，获得超越开环指标的行为信号",
+            "分析失效模式：<b>误差累积</b>、<b>状态漂移</b>、<b>控制不稳定</b>",
+            "完成 <b>技术报告</b> 与 <b>终期答辩展示</b>"
+        ],
+        "downloadsHeading": "报告与答辩文件下载",
+        "keywords": [
+            "E2E Autonomous Driving",
+            "Parking E2E",
+            "SparseDrive",
+            "Closed-loop Testing",
+            "Model Diagnosis and Evaluation"
+        ],
+        "report": "报告（PDF）",
+        "slides": "答辩/Slides",
+        "downloadsTitle": "下载",
+        "downloadsSubtitle": "答辩材料与报告（可视化预览 + 一键下载）",
+        "download": "下载",
+        "comingSoon": "即将补齐"
+    },
+    "awards": {
+        "title": "获奖",
+        "items": [
+            {
+                "name": "全国大学生数学建模竞赛 <b>广东省一等奖</b>",
+                "year": "2025",
+                "tag": "Modeling"
+            },
+            {
+                "name": "MCM 美赛 Successful Participant（队长）",
+                "year": "2024",
+                "tag": "Modeling"
+            },
+            {
+                "name": "英语六级 CET-6",
+                "year": "2025",
+                "tag": "English"
+            }
+        ]
+    },
+    "projects": {
+        "title": "课程资源与项目实现",
+        "subtitle": "持续更新中......",
+        "featured": "建设中",
+        "repo": "仓库",
+        "repoSoon": "仓库链接后续补齐（先上线网站）",
+        "filters": {
+            "all": "全部",
+            "autonomy": "自动驾驶",
+            "ai": "AI",
+            "systems": "系统"
+        },
+        "items": {
+            "closedLoop": {
+                "title": "端到端自动驾驶闭环测试原型系统",
+                "desc": "基于 CARLA 的交互式评测 pipeline，关注闭环中的误差累积、状态漂移与稳定性诊断。"
+            },
+            "ai": {
+                "title": "AI / 机器学习方向项目（待整理）",
+                "desc": "把 AI 相关课程/实验项目整理为可复现仓库，补齐 README、环境与复现实验流程。"
+            },
+            "systems": {
+                "title": "计算机网络 / 系统设计实验（待整理）",
+                "desc": "把网络与系统相关实验整理为工程化项目，包含测试用例与清晰文档。"
+            }
+        },
+        "gotoGithub": "前往 GitHub",
+        "planTitle": "目录规划（后续上线）",
+        "planItems": [
+            "自动驾驶 / 闭环评测",
+            "AI / 机器学习课程项目",
+            "系统 / 网络实验与工程化实现",
+            "工具链与可复现模板（CI / 文档）"
+        ],
+        "note": "说明：该区块目前为占位，后续将更新为可点击仓库卡片。"
+    },
+    "skills": {
+        "title": "能力与爱好",
+        "subtitle": "",
+        "columns": {
+            "courses": {
+                "title": "修习课程",
+                "items": [
+                    "工程概率统计",
+                    "数据结构与算法分析",
+                    "数字逻辑",
+                    "数据库原理",
+                    "计算机高级程序设计",
+                    "计算机组成原理",
+                    "离散数学",
+                    "计算机系统设计及应用",
+                    "计算机网络",
+                    "面向对象分析与设计",
+                    "人工智能"
+                ]
+            },
+            "tech": {
+                "title": "编程语言与辅助工具",
+                "items": [
+                    "Java, C, C++, Python, MATLAB: 掌握这些语言的编程与项目构建能力。",
+                    "Git, GitHub: 熟悉GitHub仓库的文件创建、提交、修改、维护等流程。",
+                    "LaTeX，Markdown: 拥有基础的语言能力和学术论文的排版与写作能力。",
+                    "Windows, Linux, MacOS, Carla: 善于使用各种操作系统与Carla仿真测试。"
+                ]
+            },
+            "others": {
+                "title": "其他能力",
+                "items": [
+                    "良好的团队协作意识：能够快速融入项目组，与成员高效配合，共同推进复杂工程与科研任务。",
+                    "组织与沟通能力：能够积极协调会议，清晰表达需求，促进项目顺利推进。",
+                    "多语言交流能力：能够完成中英日多语言环境下的资料整理与协调沟通任务。",
+                    "人际支持与服务意识：能够在高压环境中提供情绪价值与后勤保障，为团队营造积极氛围。"
+                ]
+            },
+            "hobbies": {
+                "title": "个人爱好",
+                "items": [
+                    "阅读：喜读书卷，文字为舟，泛航学识，感受思想的温度与历史的回响。",
+                    "健身：习强身术，沐晨光下锻炼体魄，于汗水中寻得心神的沉静与坚定。",
+                    "旅行：行万里路，探山河异域之奇景，听街巷人语之温情，在一次次出发与抵达中，拓宽眼界，沉淀灵魂。",
+                    "电子游戏：穿梭虚拟幻想之境，于数字构筑的天地中追寻创意与巧思，体验人类技术与艺术交融的奇迹。"
+                ]
+            }
+        }
+    },
+    "timeline": {
+        "title": "成长履历",
+        "subtitle": "",
+        "items": [
+            {
+                "time": "2025",
+                "title": "全国大学生数学建模竞赛广东省一等奖",
+                "desc": "",
+                "type": "award"
+            },
+            {
+                "time": "2025",
+                "title": "年度优秀共青团员、优秀学生",
+                "desc": "",
+                "type": "award"
+            },
+            {
+                "time": "2025",
+                "title": "英语六级 CET-6",
+                "desc": "",
+                "type": "language"
+            },
+            {
+                "time": "2025",
+                "title": "MCM 美赛 Successful Participant",
+                "desc": "",
+                "type": "award",
+                "preview": "/files/mcm.jpg"
+            },
+            {
+                "time": "2024",
+                "title": "英语四级 CET-4",
+                "desc": "",
+                "type": "language"
+            },
+            {
+                "time": "2024",
+                "title": "南方科技大学迎新杯乒乓球赛八强",
+                "desc": "",
+                "type": "sports"
+            },
+            {
+                "time": "2023",
+                "title": "南方科技大学新生奖学金",
+                "desc": "",
+                "type": "award"
+            }
+        ]
+    },
+    "footer": {
+        "built": "Hosted on GitHub Pages · All rights reserved"
+    }
+}
