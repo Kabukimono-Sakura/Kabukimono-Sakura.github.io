@@ -106,7 +106,6 @@ function GitHubIcon() {
     );
 }
 
-// ✅ 新增：简历下载图标（文件/下载风格，与你现有线性图标一致）
 function ResumeIcon() {
     return (
         <svg
@@ -162,13 +161,12 @@ export default function Hero() {
     const [copiedKey, setCopiedKey] = useState<"email" | "phone" | null>(null);
 
     const emailLabel = useMemo(() => {
-        if (copiedKey === "email") return t("hero.copied"); // ✅ 使用 i18n：已复制邮箱 / Email copied
+        if (copiedKey === "email") return t("hero.copied");
         return profile.email;
     }, [copiedKey, t]);
 
     const phoneLabel = useMemo(() => {
         if (copiedKey === "phone") {
-            // ✅ 不新增 json key，最小改动：中文/英文/日文也可以直接显示“已复制电话”你若要国际化再补 key
             return langSafeCopiedPhone(t);
         }
         return profile.phone;
@@ -183,11 +181,12 @@ export default function Hero() {
 
     const resumeUrl = (profile as any).resume ?? (profile as any).resumeUrl ?? "/files/resume.pdf";
 
+    // ✅ SEO：稳定的人名信号（不依赖 i18n）
+    const seoName = "罗文韬（Wentao Luo）";
+
     return (
         <section id="home" className="pt-14 pb-10">
-            {/* ===== 上半部分：左右两列 ===== */}
             <div className="grid lg:grid-cols-12 gap-10 items-start">
-                {/* Left */}
                 <motion.div
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -199,17 +198,18 @@ export default function Hero() {
                         {t("hero.badge")}
                     </div>
 
+                    {/* ✅ 关键：H1 必须稳定包含“罗文韬” */}
                     <h1 className="mt-5 text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-                        {t("hero.title")}
+                        {seoName}
+                        {/* 保留原 i18n title（给屏幕阅读器/可访问性），不影响视觉与 SEO */}
+                        <span className="sr-only">{t("hero.title")}</span>
                     </h1>
 
                     <p className="mt-5 whitespace-pre-line text-zinc-600 dark:text-zinc-300 text-base md:text-lg leading-relaxed">
                         {t("hero.subtitle")}
                     </p>
 
-                    {/* Icons */}
                     <div className="mt-6 relative z-20 flex justify-center">
-                        {/* ✅ 仅改这里：加一个简历下载按钮 */}
                         <div className="flex items-center gap-14">
                             <ActionButton label={emailLabel} onClick={() => onCopy("email", profile.email)}>
                                 <MailIcon />
@@ -229,9 +229,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* 4 cards */}
                     <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(18,minmax(0,1fr))] gap-4 items-stretch">
-                        {/* ratio 2 => col-span-4 */}
                         <div className="card p-3 lg:col-span-4 flex flex-col justify-center">
                             <div className="text-xs text-center text-zinc-500 dark:text-zinc-400">
                                 学科绩点与专业排名
@@ -254,7 +252,6 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* ratio 2 => col-span-4 */}
                         <div className="card p-3 lg:col-span-4 flex flex-col justify-center">
                             <div className="text-xs text-center text-zinc-500 dark:text-zinc-400">学业导师</div>
                             <div className="mt-3 text-center">
@@ -270,7 +267,6 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* ratio 1.5 => col-span-3 */}
                         <div className="card p-3 lg:col-span-3 flex flex-col justify-center">
                             <div className="text-xs text-center text-zinc-500 dark:text-zinc-400">学术证书</div>
                             <div className="mt-3 text-center text-sm font-semibold leading-snug whitespace-pre-line text-zinc-900 dark:text-zinc-100">
@@ -278,7 +274,6 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* ratio 3.5 => col-span-7 */}
                         <div className="card p-3 lg:col-span-7 flex flex-col justify-center">
                             <div className="text-xs text-center text-zinc-500 dark:text-zinc-400">所获荣誉</div>
                             <div className="mt-3">
@@ -289,7 +284,7 @@ export default function Hero() {
                                             "全国数学建模大赛广东省一等奖",
                                             "MCM Successful Participant",
                                             "(As the Team Leader)",
-                                            "2025年南科大优秀学生"
+                                            "2025年南科大优秀学生",
                                         ]
                                     ).map((x) => (
                                         <li key={x} className="py-0.5">
@@ -302,14 +297,12 @@ export default function Hero() {
                     </div>
                 </motion.div>
 
-                {/* Right */}
                 <motion.div
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut", delay: 0.08 }}
                     className="lg:col-span-4 lg:flex lg:flex-col lg:items-end"
                 >
-                    {/* portrait */}
                     <div className="w-full max-w-[380px]">
                         <div className="overflow-hidden rounded-3xl shadow-soft">
                             <div className="aspect-[5/6] w-full">
@@ -325,7 +318,6 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            {/* ===== chips 独立一整行：从最左到最右，无滚动条 ===== */}
             <div className="mt-6">
                 <div className="flex flex-wrap justify-center gap-2">
                     {Array.isArray(chips) &&
@@ -340,15 +332,8 @@ export default function Hero() {
     );
 }
 
-/**
- * 最小改动：避免新增 i18n key 的情况下，让 phone copied 文案有一个合理默认值。
- * 如果你愿意国际化，可在 en/ja 增加 hero.copiedPhone，然后改这里直接 t("hero.copiedPhone")
- */
 function langSafeCopiedPhone(t: (key: string) => string) {
-    // 尝试复用已有 key；没有就回退中文
-    // 这里不新增任何 json key
     const copied = t("hero.copied");
-    // 如果 hero.copied 在英文为 "Email copied"，用于 phone 会怪，所以回退中文
     if (copied && copied.toLowerCase().includes("email")) return "已复制电话";
     return copied || "已复制电话";
 }
